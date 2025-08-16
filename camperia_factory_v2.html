@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camperia Factory</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #333; color: white; padding: 20px; text-align: center; }
+        header h1 { margin: 0; }
+        nav { background: #555; display: flex; justify-content: center; }
+        nav a { color: white; padding: 15px 20px; text-decoration: none; }
+        nav a:hover { background: #777; }
+        section { padding: 40px; max-width: 1200px; margin: auto; }
+        .banner { 
+            background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover; 
+            color: white; 
+            padding: 140px 20px; 
+            text-align: center; 
+        }
+        .banner h2, .banner p { background: rgba(0,0,0,0.45); display: inline-block; padding: 10px 20px; border-radius: 6px; }
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .service-card { background: #f5f5f5; padding: 20px; border-radius: 8px; text-align: center; }
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .projects img { width: 100%; border-radius: 8px; }
+        footer { background: #333; color: white; text-align: center; padding: 20px; }
+        form { display: grid; gap: 15px; max-width: 500px; margin: auto; }
+        input, textarea, button { padding: 10px; font-size: 16px; }
+        button { background: #333; color: white; border: none; cursor: pointer; }
+        button:hover { background: #555; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Camperia Factory</h1>
+        <p>Transformamos tu furgoneta en el hogar sobre ruedas que siempre soñaste</p>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio" class="banner">
+        <h2>Bienvenido a Camperia Factory</h2>
+        <p>Especialistas en camperización personalizada</p>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Diseño personalizado</h3>
+                <p>Adaptamos el diseño interior a tu estilo de vida.</p>
+            </div>
+            <div class="service-card">
+                <h3>Instalaciones eléctricas</h3>
+                <p>Baterías LiFePO4, paneles solares y más.</p>
+            </div>
+            <div class="service-card">
+                <h3>Fontanería</h3>
+                <p>Agua potable, grises, bombas y fregaderos.</p>
+            </div>
+            <div class="service-card">
+                <h3>Mobiliario a medida</h3>
+                <p>Camas, armarios y cajoneras únicas.</p>
+            </div>
+            <div class="service-card">
+                <h3>Aislamiento y revestimiento</h3>
+                <p>Confort térmico y acústico todo el año.</p>
+            </div>
+            <div class="service-card">
+                <h3>Homologaciones</h3>
+                <p>Gestión completa para circular legalmente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="projects">
+            <img src="https://picsum.photos/400/300?van1" alt="Proyecto 1">
+            <img src="https://picsum.photos/400/300?van2" alt="Proyecto 2">
+            <img src="https://picsum.photos/400/300?van3" alt="Proyecto 3">
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="tel" placeholder="Teléfono">
+            <textarea placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Camperia Factory – Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
